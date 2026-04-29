@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en" data-theme="cream" data-accent="oxblood" data-density="default">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Samantha Rubinchik — Prospective CFO, Security Engineering</title>
+<meta name="description" content="Operator who underwrites risk and ships. Prospective CFO of a security-engineering company." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <script type="text/babel" src="data.jsx"></script>
+  <script type="text/babel" src="components.jsx"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+
+  <script type="text/babel">
+    const { useEffect } = React;
+
+    const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      "theme": "light",
+      "accent": "oxide",
+      "density": "airy",
+      "headline": "Underwrites risk.|Ships what she signs off on.",
+      "showTicker": true,
+      "showSnapshot": true,
+      "showPitch": true
+    }/*EDITMODE-END*/;
+
+    function App() {
+      const [tweaks, setTweak] = useTweaks(TWEAK_DEFAULTS);
+
+      useEffect(() => {
+        const html = document.documentElement;
+        html.dataset.theme = tweaks.theme;
+        html.dataset.accent = tweaks.accent;
+        html.dataset.density = tweaks.density;
+      }, [tweaks.theme, tweaks.accent, tweaks.density]);
+
+      // build hero headline html from "line1|line2"
+      const [l1, l2] = (tweaks.headline || "").split("|");
+      const headlineHtml =
+        `${escapeHtml(l1 || "")}<br/><span class="accent">${escapeHtml(l2 || "")}</span>` +
+        `<span class="small">Capital allocation, physical operations, and product — pointed at one job: CFO of a security-engineering company.</span>`;
+
+      return (
+        <>
+          <TopBar />
+          <Hero headline={headlineHtml} />
+          {tweaks.showSnapshot && <Snapshot />}
+          <CaseStudies />
+          <Timeline />
+          <Recommendation />
+          {tweaks.showPitch && <Pitch />}
+          <EduHonors />
+          <Contact />
+          <Footer />
+
+          <TweaksPanel title="Tweaks">
+            <TweakSection label="Theme">
+              <TweakRadio
+                label="Mode"
+                value={tweaks.theme}
+                onChange={(v) => setTweak("theme", v)}
+                options={[
+                  { value: "cream", label: "Cream" },
+                  { value: "light", label: "Light" },
+                  { value: "dark",  label: "Dark"  },
+                ]}
+              />
+              <TweakRadio
+                label="Accent"
+                value={tweaks.accent}
+                onChange={(v) => setTweak("accent", v)}
+                options={[
+                  { value: "oxblood", label: "Oxblood" },
+                  { value: "ink",     label: "Ink" },
+                  { value: "forest",  label: "Forest" },
+                  { value: "oxide",   label: "Oxide" },
+                ]}
+              />
+              <TweakRadio
+                label="Density"
+                value={tweaks.density}
+                onChange={(v) => setTweak("density", v)}
+                options={[
+                  { value: "compact", label: "Compact" },
+                  { value: "default", label: "Default" },
+                  { value: "airy",    label: "Airy" },
+                ]}
+              />
+            </TweakSection>
+
+            <TweakSection label="Hero copy">
+              <TweakText
+                label="Headline (use | to break line)"
+                value={tweaks.headline}
+                onChange={(v) => setTweak("headline", v)}
+              />
+            </TweakSection>
+
+            <TweakSection label="Sections">
+              <TweakToggle label="Show snapshot numbers" value={tweaks.showSnapshot} onChange={(v) => setTweak("showSnapshot", v)} />
+              <TweakToggle label="Show 'Why CFO' pitch"  value={tweaks.showPitch}    onChange={(v) => setTweak("showPitch", v)} />
+            </TweakSection>
+          </TweaksPanel>
+        </>
+      );
+    }
+
+    function escapeHtml(s) {
+      return String(s || "")
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+  </script>
+</body>
+</html>
