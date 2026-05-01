@@ -739,6 +739,10 @@ section + section { border-top: 1px solid var(--grid); }
   letter-spacing: 0.04em;
 }
 .rec-toggle:hover { background: var(--paper); border-color: var(--ink); }
+summary.rec-toggle { display: inline-block; list-style: none; cursor: pointer; user-select: none; }
+summary.rec-toggle::-webkit-details-marker { display: none; }
+summary.rec-toggle::before { content: "▶ "; display: inline-block; margin-right: 4px; }
+details[open] > summary.rec-toggle::before { content: "▼ "; }
 
 .rec-full {
   margin-top: 24px;

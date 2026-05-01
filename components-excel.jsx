@@ -132,9 +132,8 @@ function XLKPI() {
 
 }
 
-/* ---------- Selected Work — pivot table ---------- */
+/* ---------- Selected Work — pivot table (all rows expanded for static HTML) ---------- */
 function XLWork() {
-  const [open, setOpen] = React.useState(0);
   return (
     <section id="work">
       <div className="page">
@@ -151,47 +150,44 @@ function XLWork() {
         <table className="case-table">
           <thead>
             <tr>
-              <th>Ref</th><th>Year</th><th>Domain</th><th>Project</th><th>Headline metric</th><th></th>
+              <th>Ref</th><th>Year</th><th>Domain</th><th>Project</th><th>Headline metric</th>
             </tr>
           </thead>
           <tbody>
-            {D.cases.map((c, i) =>
+            {D.cases.map((c) =>
             <React.Fragment key={c.id}>
-                <tr onClick={() => setOpen(open === i ? -1 : i)} style={{ cursor: "pointer" }}>
+                <tr>
                   <td className="id-col">{c.id}</td>
                   <td className="year-col">{c.year}</td>
                   <td className="tag-col">{c.tag}</td>
                   <td className="title-col">{c.title}</td>
                   <td className="metric-col">{c.outcome[0].v}</td>
-                  <td><span className="expander">{open === i ? "−" : "+"}</span></td>
                 </tr>
-                {open === i &&
-              <tr className="case-row-detail">
-                    <td colSpan="6">
-                      <div className="grid">
-                        <div>
-                          <div className="lbl">Problem</div>
-                          <p>{c.problem}</p>
-                        </div>
-                        <div>
-                          <div className="lbl">Action</div>
-                          <p>{c.action}</p>
-                          {c.link && <a className="extlink" href={c.link.href} target="_blank" rel="noreferrer">{c.link.label} ↗</a>}
-                        </div>
-                        <div className="out-card">
-                          <div className="lbl" style={{ marginBottom: 10 }}>Outcome</div>
-                          <dl>
-                            {c.outcome.map((o, j) =>
-                        <React.Fragment key={j}>
-                                <dt>{o.k}</dt><dd>{o.v}</dd>
-                              </React.Fragment>
-                        )}
-                          </dl>
-                        </div>
+                <tr className="case-row-detail">
+                  <td colSpan="5">
+                    <div className="grid">
+                      <div>
+                        <div className="lbl">Problem</div>
+                        <p>{c.problem}</p>
                       </div>
-                    </td>
-                  </tr>
-              }
+                      <div>
+                        <div className="lbl">Action</div>
+                        <p>{c.action}</p>
+                        {c.link && <a className="extlink" href={c.link.href} target="_blank" rel="noreferrer">{c.link.label} ↗</a>}
+                      </div>
+                      <div className="out-card">
+                        <div className="lbl" style={{ marginBottom: 10 }}>Outcome</div>
+                        <dl>
+                          {c.outcome.map((o, j) =>
+                          <React.Fragment key={j}>
+                              <dt>{o.k}</dt><dd>{o.v}</dd>
+                            </React.Fragment>
+                          )}
+                        </dl>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
               </React.Fragment>
             )}
           </tbody>
@@ -254,9 +250,8 @@ function XLTimeline() {
 
 }
 
-/* ---------- Recommendation as Review > Comments ---------- */
-function RecThread({ rec, color, expandable, defaultOpen }) {
-  const [open, setOpen] = React.useState(!!defaultOpen);
+/* ---------- Recommendation as Review > Comments (uses native <details> for collapse) ---------- */
+function RecThread({ rec, color, expandable }) {
   return (
     <div className="rec-thread" style={{ marginBottom: 20 }}>
       <div className="rec-comment pinned">
@@ -278,21 +273,17 @@ function RecThread({ rec, color, expandable, defaultOpen }) {
         </div>
       )}
       {expandable && rec.fullLetter &&
-      <div className="rec-comment normal" style={{ borderTop: "1px dashed var(--grid)" }}>
-          <button className="rec-toggle" onClick={() => setOpen((o) => !o)}>
-            {open ? "▼ Collapse full letter" : "▶ Expand full letter"}
-          </button>
-          {open &&
-        <div className="rec-full">
-              {rec.fullLetter.map((p, i) => <p key={i}>{p}</p>)}
-              <div className="rec-sign">
-                <div>Best regards,</div>
-                <div><b>{rec.author}</b> · {rec.title} · {rec.org}</div>
-                {rec.fileLink && <div style={{ marginTop: 8 }}><a href={rec.fileLink} download style={{ color: "var(--link)" }}>Download original ↓</a></div>}
-              </div>
+      <details className="rec-comment normal rec-details" style={{ borderTop: "1px dashed var(--grid)" }}>
+          <summary className="rec-toggle">Expand full letter</summary>
+          <div className="rec-full">
+            {rec.fullLetter.map((p, i) => <p key={i}>{p}</p>)}
+            <div className="rec-sign">
+              <div>Best regards,</div>
+              <div><b>{rec.author}</b> · {rec.title} · {rec.org}</div>
+              {rec.fileLink && <div style={{ marginTop: 8 }}><a href={rec.fileLink} download style={{ color: "var(--link)" }}>Download original ↓</a></div>}
             </div>
-        }
-        </div>
+          </div>
+        </details>
       }
     </div>);
 
