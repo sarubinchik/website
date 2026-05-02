@@ -17,7 +17,7 @@ const SITE_DATA = {
   // top-of-page numbers
   snapshot: [
     { value: "$540M+", label: "CRE deals underwritten at JPMorgan" },
-    { value: "60", label: "Treasury Sales clients covered as interim associate" },
+    { value: "60", label: "Treasury Sales clients ($2.5B book) covered as interim associate" },
     { value: "7", label: "Active residential flips, ~$3M avg" },
     { value: "1 mo.", label: "Full structural remodel (vs. 6–8 mo. industry std.)" },
   ],
@@ -47,13 +47,13 @@ const SITE_DATA = {
       id: "C-02",
       tag: "Capital · Treasury Sales",
       year: "2023",
-      title: "JPMorgan TSS: a 60-client book, covered through the SVB crisis — and earned the title mid-engagement.",
+      title: "JPMorgan TSS: a 60-client / $2.5B book, covered through the SVB crisis — and earned the title mid-engagement.",
       problem:
-        "Silicon Valley Bank collapsed in March 2023 and the senior associate on the desk stepped away. Sixty Treasury Sales relationships needed full coverage on no-notice, with deployments and client questions in flight.",
+        "Silicon Valley Bank collapsed in March 2023 and the senior associate on the desk stepped away. Sixty Treasury Sales relationships ($2.5B in coverage) needed full coverage on no-notice, with deployments and client questions in flight.",
       action:
-        "Took the 60-client book (25 active, 35 passive) plus overflow as interim associate — still technically pre-hire. Drafted Product Letters, built the TS Matrix, modeled Pro Formas, kept detailed call notes, and partnered with internal services on white-glove deployments. JPMorgan offered the full Associate title in the middle of the engagement.",
+        "Took the 60-client / $2.5B book (25 active, 35 passive) plus overflow as interim associate — still technically pre-hire. Drafted Product Letters, built the TS Matrix, modeled Pro Formas, kept detailed call notes, and partnered with internal services on white-glove deployments. JPMorgan offered the full Associate title in the middle of the engagement.",
       outcome: [
-        { k: "Clients covered", v: "60" },
+        { k: "Clients covered", v: "60 / $2.5B book" },
         { k: "Mid-engagement", v: "Offered full Associate title" },
         { k: "Context", v: "SVB crisis, March 2023" },
       ],
@@ -62,15 +62,15 @@ const SITE_DATA = {
       id: "C-03",
       tag: "Capital · Underwriting",
       year: "2022",
-      title: "JPMorgan REB: hit the yearly goal in Q1.",
+      title: "JPMorgan REB: ~11 large CRE deals — including the desk's two biggest closes that year.",
       problem:
         "Real Estate Banking team needed to clear an annual revenue target while maintaining underwriting discipline across a varied submarket book.",
       action:
-        "Underwrote 32 commercial real-estate deals; ran submarket research that informed go/no-go decisions; built a handover doc the next class of associates still uses.",
+        "Underwrote ~11 large CRE deals as analyst, including a ~$1.0B regional mall and a ~$175M Los Angeles office (both closed). Operated in the team's underwriting models and learned them, ran submarket research, drafted credit memos, and authored a handover doc the next class of associates still uses.",
       outcome: [
-        { k: "Deals underwritten", v: "32" },
+        { k: "Deals underwritten", v: "~11" },
+        { k: "Two biggest closes", v: "~$1.0B mall · ~$175M LA office" },
         { k: "Yearly goal", v: "Hit by end of Q1" },
-        { k: "Knowledge transfer", v: "Standardized handover doc" },
       ],
     },
     {
@@ -136,7 +136,7 @@ const SITE_DATA = {
           name: "Treasury Sales",
           span: "Aug 2022 – Sep 2023",
           notes: [
-            "Given a 60-client book (25 active, 35 passive) plus overflow as interim associate — still technically pre-hire — during the Silicon Valley Bank crisis; offered the full Associate title mid-engagement.",
+            "Given a 60-client / $2.5B book (25 active, 35 passive) plus overflow as interim associate — still technically pre-hire — during the Silicon Valley Bank crisis; offered the full Associate title mid-engagement.",
             "Drafted Product Letters, built TS Matrix, modeled Pro Formas, ran detailed call notes.",
             "Partnered with internal services to deploy and follow up on white-glove deployments.",
             "Improved commercial-card opening process by syncing the card team with client feedback.",
@@ -146,7 +146,7 @@ const SITE_DATA = {
           name: "Real Estate Banking",
           span: "Jan 2022 – Jul 2022",
           notes: [
-            "Underwrote 32 CRE deals; team hit yearly revenue goal within Q1 2022.",
+            "Underwrote ~11 large CRE deals as analyst, including a ~$1.0B regional mall and a ~$175M Los Angeles office (both closed); team hit yearly revenue goal within Q1 2022.",
             "Performed submarket research to support financing decisions.",
             "Authored standardized handover doc for incoming associates.",
           ],
@@ -156,7 +156,7 @@ const SITE_DATA = {
           span: "Jul 2021 – Dec 2021",
           notes: [
             "Sales: matched portfolios to loan structures (I/O, hybrid, SOFR, prepayment options).",
-            "Credit: underwrote multifamily real-estate loans under $15MM.",
+            "Credit: underwrote 180+ multifamily real-estate loans (each under $15MM).",
           ],
         },
         {
