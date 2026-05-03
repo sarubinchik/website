@@ -272,7 +272,7 @@ const SITE_DATA = {
   leadership: [
     {
       title: "Board Member, JPMorgan CRE Analyst & Associate Council",
-      span: "2021 – Present",
+      span: "2021 – Mar 2023",
       notes:
         "Built remote-onboarding rituals for analysts during COVID; authored LOB-aligned onboarding docs.",
     },
