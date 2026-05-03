@@ -549,6 +549,20 @@ section + section { border-top: 1px solid var(--grid); }
 .case-table td.metric-col { font-family: "JetBrains Mono", monospace; color: var(--xl-green); font-weight: 600; }
 
 .case-table .expander { color: var(--xl-green); cursor: pointer; user-select: none; font-weight: 600; }
+
+/* click-to-collapse on case rows (the .case-row-detail right after a header row) */
+.case-table tbody tr:not(.case-row-detail) { cursor: pointer; }
+.case-table tbody tr:not(.case-row-detail) td.metric-col::after {
+  content: " ▸";
+  display: inline-block;
+  margin-left: 8px;
+  color: var(--xl-green);
+  transition: transform 0.15s;
+}
+.case-table tbody tr.is-open td.metric-col::after { content: " ▾"; }
+.case-row-detail { display: none; }
+.case-table tbody tr.is-open + .case-row-detail { display: table-row; }
+
 .case-row-detail { background: #fbfbf7; border-bottom: 1px solid var(--grid) !important; }
 .case-row-detail td { padding: 24px 32px 28px; }
 .case-row-detail .grid {
