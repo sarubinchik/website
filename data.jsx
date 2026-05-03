@@ -117,12 +117,12 @@ const SITE_DATA = {
       ],
     },
     {
-      role: "Career break — India & London",
+      role: "Family caregiver",
       org: "",
       place: "",
       span: "Oct 2023 – Oct 2024",
-      kind: "Break",
-      bullets: ["Lived abroad. Reset, traveled, returned with a clearer thesis on operating roles."],
+      kind: "Caregiver",
+      bullets: ["Travel through India and London (Oct – Dec 2023). Left London when my dad was diagnosed with cancer; returned to the US, set up his care at City of Hope, and worked as part-time in-home caregiver. Returned to operating roles with a clearer thesis."],
     },
     {
       role: "Commercial Real Estate Rotational Analyst",
