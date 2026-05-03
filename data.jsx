@@ -117,6 +117,20 @@ const SITE_DATA = {
       ],
     },
     {
+      role: "Acting Operator + Freelance Consultant",
+      org: "Evans Newport Group · Independent consulting",
+      place: "Texas",
+      span: "Oct 2023 – Oct 2025",
+      kind: "Real Estate",
+      bullets: [
+        "Stepped in to run my family's Texas-based real-estate property management company (Evans Newport Group) while my dad was in cancer treatment — held daily check-ins with the on-the-ground team to coordinate turnover and prevent vacancy bunching.",
+        "Drove unit-level capital improvements across the portfolio: refreshed appliances and updated lighting to softer fixtures.",
+        "Designed a sales-team bonus structure tied to filling units on tight timelines.",
+        "Underwrote, upgraded, and flipped select properties.",
+        "Freelance work in parallel: real-estate consulting and marketing consulting for a finance-sector client.",
+      ],
+    },
+    {
       role: "Family caregiver",
       org: "",
       place: "",
