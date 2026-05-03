@@ -62,14 +62,14 @@ const SITE_DATA = {
       id: "C-03",
       tag: "Capital · Underwriting",
       year: "2022",
-      title: "JPMorgan REB: ~11 large CRE deals — including the desk's two biggest closes that year.",
+      title: "JPMorgan REB: ~11 large CRE deals, including a ~$1.0B mall and a ~$175M LA office.",
       problem:
         "Real Estate Banking team needed to clear an annual revenue target while maintaining underwriting discipline across a varied submarket book.",
       action:
         "Underwrote ~11 large CRE deals as analyst, including a ~$1.0B regional mall and a ~$175M Los Angeles office (both closed). Operated in the team's underwriting models and learned them, ran submarket research, drafted credit memos, and authored a handover doc the next class of associates still uses.",
       outcome: [
         { k: "Deals underwritten", v: "~11" },
-        { k: "Two biggest closes", v: "~$1.0B mall · ~$175M LA office" },
+        { k: "Two biggest of my rotation", v: "~$1.0B mall · ~$175M LA office" },
         { k: "Team's yearly goal", v: "Hit by end of Q1" },
       ],
     },
