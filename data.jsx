@@ -70,7 +70,7 @@ const SITE_DATA = {
       outcome: [
         { k: "Deals underwritten", v: "~11" },
         { k: "Two biggest closes", v: "~$1.0B mall · ~$175M LA office" },
-        { k: "Yearly goal", v: "Hit by end of Q1" },
+        { k: "Team's yearly goal", v: "Hit by end of Q1" },
       ],
     },
     {
@@ -85,7 +85,6 @@ const SITE_DATA = {
       outcome: [
         { k: "Status", v: "Designed, prototyped, scoped for rollout" },
         { k: "Scope", v: "US ↔ DE crisis coordination" },
-        { k: "Follow-on", v: "Innovation Challenge, 2018" },
       ],
     },
   ],
