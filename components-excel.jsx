@@ -37,7 +37,7 @@ function XLChrome() {
         <div className="namebox">A1</div>
         <div className="fx">𝑓𝑥</div>
         <div className="formula">
-          <span className="fn">=CFO</span>(<span className="str">"private_ai_hardware"</span>, <span className="fn">SUM</span>(capital, ops, product), <span className="num">540000000</span>)
+          <span className="fn">=CFO</span>(<span className="str">"droplet"</span>, <span className="fn">SUM</span>(capital, ops, product), <span className="num">540000000</span>)
         </div>
       </div>
     </>);
@@ -72,7 +72,7 @@ function XLHero() {
               <span className="equals">&amp;</span>ships <span className="hl">what she signs off on.</span>
             </h1>
             <p className="hero-thesis">
-              JPMorgan commercial real-estate desk → residential and commercial buildouts on tight timelines → conceiving and prototyping internal software at Mercedes. Now pointed at one job: <em>CFO of Warp Laboratory, Inc. — building a private AI home server.</em>
+              JPMorgan commercial real-estate desk → residential and commercial buildouts on tight timelines → conceiving and prototyping internal software at Mercedes. Now pointed at one job: <em>CFO of Warp Laboratory, Inc. — building Droplet, on-prem AI for regulated SMBs.</em>
             </p>
             <div className="hero-cta">
               <a className="btn" href="#work">Open the work →</a>
@@ -358,7 +358,7 @@ function XLThesis() {
         <div className="section-head">
           <div>
             <div className="ref">Sheet 4 · "thesis" · A1</div>
-            <h2>Why CFO. Why <em>private AI hardware.</em> Why now.</h2>
+            <h2>Why CFO. Why <em>on-prem AI for SMBs.</em> Why now.</h2>
           </div>
           <div className="meta">
             <div className="cell-equation" style={{ fontSize: 11 }}><span className="fn">=THESIS</span>(<span className="str">"trust"</span>, <span className="str">"range"</span>)</div>
@@ -443,7 +443,7 @@ function XLContact() {
         </div>
         <div className="contact-grid">
           <div>
-            <p style={{ maxWidth: "42ch", color: "var(--ink-soft)", fontSize: 16, lineHeight: 1.6 }}>Warp Laboratory, Inc. is building a private AI home server — local storage, networking, and smart-home, all on-device. Based in Costa Mesa, CA. I run capital, operations, and the financial story.</p>
+            <p style={{ maxWidth: "42ch", color: "var(--ink-soft)", fontSize: 16, lineHeight: 1.6 }}>Warp Laboratory, Inc. is building Droplet — an on-prem AI appliance for SMBs. One box plugs in and replaces Dropbox, Microsoft 365 storage, Copilot, the router, and the Wi-Fi; private data never leaves the building. Based in Costa Mesa, CA. I run capital, operations, and the financial story.</p>
             <div className="cell-equation" style={{ marginTop: 24 }}>
               <span className="fn">=HYPERLINK</span>(<span className="str">"mailto:{D.email}"</span>, <span className="str">"let's talk"</span>)
             </div>

@@ -12,7 +12,7 @@ const SITE_DATA = {
   // hero
   position: "CFO, Warp Laboratory, Inc.",
   thesis:
-    "CFO of Warp Laboratory, Inc. — a private AI home server that runs storage, network, and smart-home locally. Operator who underwrites risk and ships: three years on the JPMorgan commercial real-estate desk, two years running residential and commercial buildouts, and a track record of conceiving and prototyping internal software. Range, pointed at the financial spine of a hardware-meets-AI company.",
+    "CFO of Warp Laboratory, Inc. — building Droplet, an on-prem AI appliance for compliance-heavy SMBs that replaces Dropbox, Microsoft 365 storage, Copilot, the router, and the Wi-Fi in one box. Operator who underwrites risk and ships: three years on the JPMorgan commercial real-estate desk, two years running residential and commercial buildouts, and a track record of conceiving and prototyping internal software. Range, pointed at the financial spine of a hardware-meets-AI company.",
 
   // top-of-page numbers
   snapshot: [
@@ -96,9 +96,9 @@ const SITE_DATA = {
       org: "Warp Laboratory, Inc.",
       place: "Costa Mesa, CA",
       span: "Feb 2026 – Present",
-      kind: "Private AI hardware",
+      kind: "On-prem AI for SMBs",
       bullets: [
-        "Run capital, operations, and the financial story for an early-stage company building a private AI home server — local storage, networking, and smart-home, all on-device.",
+        "Run capital, operations, and the financial story for an early-stage company building Droplet — an on-prem AI appliance for SMBs. One box plugs in and replaces Dropbox, Microsoft 365 storage, Copilot, the router, and the Wi-Fi; private data never leaves the building.",
         "Own cap table, financial model, board-facing reporting, and supply-chain / procurement support.",
         "Translate engineering work into the language investors, partners, and customers need.",
       ],
@@ -325,9 +325,9 @@ const SITE_DATA = {
 
   // why CFO / why this company
   pitch: {
-    headline: "Why I'm the CFO of a private AI hardware company.",
+    headline: "Why I'm the CFO of an on-prem AI company.",
     paras: [
-      "Warp Laboratory is building a private AI home server — storage, network, and smart-home that runs locally instead of in someone else's cloud. The CFO's job here is to fund a hardware roadmap, build a sane unit economic, and tell that story to investors and customers without watering it down.",
+      "Warp Laboratory is building Droplet — an on-prem AI appliance for compliance-heavy SMBs. One box plugs into the network and replaces Dropbox, Microsoft 365 storage, Copilot, the router, and the Wi-Fi. AI runs locally on an NPU as a unified agent across files, cameras, smart devices, and access control — answering questions, summarizing camera footage, drafting emails, controlling Matter devices and network settings, all from a single chat tied to existing team identity. Every action passes a 3-tier safety system (reads run automatically; writes need confirmation; destructive operations are blocked by design). Private data never leaves the building. The CFO's job here is to fund the hardware roadmap, build a sane unit economic, and tell that story to investors and customers without watering it down.",
       "My career has been the right kind of preparation. At JPMorgan I underwrote $540M+ of commercial real-estate deals and ran a 60-client Treasury book — risk modeling and stakeholder management at speed. At Bye Bye House I priced, permitted, and shipped physical projects on tight budgets where every variance was real cash. At Mercedes I designed internal software from a blank page.",
       "A hardware-meets-AI CFO has to model BOM and margins, negotiate a credit facility, sit across from supply-chain partners, and translate engineering progress into a story investors believe. Range is the job — and it's why I'm here.",
     ],
