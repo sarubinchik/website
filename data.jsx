@@ -192,6 +192,17 @@ const SITE_DATA = {
       ],
     },
     {
+      role: "Caregiver → Healthcare Coordination Manager",
+      org: "Synergy HomeCare Franchising, LLC",
+      place: "St. Charles, IL",
+      span: "Apr 2020 – Jul 2020",
+      kind: "Healthcare",
+      bullets: [
+        "Stepped in after Chicago put out a public call for help during the COVID caregiver shortage. Assisted adults with daily needs and formed bonds with hospice patients during the time families couldn't visit due to the pandemic.",
+        "Moved into the Healthcare Coordination Manager role full-time within two months.",
+      ],
+    },
+    {
       role: "CRE Digital Summer Intern",
       org: "JP Morgan Private Bank",
       place: "Palo Alto, CA",
