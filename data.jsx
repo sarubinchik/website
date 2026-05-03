@@ -353,7 +353,7 @@ const SITE_DATA = {
     "Military SAF Case Worker, American Red Cross — 2020",
     "UA Healthcare Analytics Society Scholar — 2019–20",
     "MBUSI High-Performance Co-Op — 2018",
-    "Mercedes-Benz Student Co-Op Board — 2017–Present",
+    "Mercedes-Benz Student Co-Op Board — Fall 2017 – Spring 2019",
     "Brother, Alpha Kappa Psi · Sister, Delta Gamma",
     "UA Dean's List — 2015–16, 2017–18",
     "Julie Inman Courage Award & Scholarship — 2015",
