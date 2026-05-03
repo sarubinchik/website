@@ -139,15 +139,26 @@ const SITE_DATA = {
       bullets: ["Travel through India and London (Oct – Dec 2023). Left London when my dad was diagnosed with cancer; returned to the US, set up his care at City of Hope, and worked as part-time in-home caregiver. Returned to operating roles with a clearer thesis."],
     },
     {
+      role: "Associate, Treasury Sales",
+      org: "JPMorgan Chase & Co.",
+      place: "Irvine, CA",
+      span: "Mar 2023 – Oct 2023",
+      kind: "Finance",
+      bullets: [
+        "Promoted to Associate in Feb 2023, effective March — title transition coincided with the SVB crisis.",
+        "Continued running the Treasury Sales book — 60 clients, $2.5B in coverage — through the SVB engagement.",
+      ],
+    },
+    {
       role: "Commercial Real Estate Rotational Analyst",
       org: "JPMorgan Chase & Co.",
       place: "Irvine, CA",
-      span: "Jul 2020 – Sep 2023",
+      span: "Jul 2020 – Mar 2023",
       kind: "Finance",
       rotations: [
         {
           name: "Treasury Sales",
-          span: "Aug 2022 – Sep 2023",
+          span: "Aug 2022 – Mar 2023",
           notes: [
             "Given a 60-client / $2.5B book (25 active, 35 passive) plus overflow as interim associate — still technically pre-hire — during the Silicon Valley Bank crisis; offered the full Associate title mid-engagement.",
             "Drafted Product Letters, built TS Matrix, modeled Pro Formas, ran detailed call notes.",
