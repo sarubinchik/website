@@ -107,7 +107,7 @@ const SITE_DATA = {
       role: "Designer & Project Manager",
       org: "Bye Bye House",
       place: "Irvine, CA",
-      span: "Oct 2025 – Feb 2026",
+      span: "Oct 2025 – Present",
       kind: "Real Estate",
       bullets: [
         "End-to-end design and PM for residential renovations and commercial buildouts: plans, permitting, contractors, materials, budget.",
